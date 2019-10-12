@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hangman Game</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="jumbotron">
+            <h1 class="display-4">Hangman Game!</h1>
+            <p class="lead">Guess the camping words.</p>
+            <p>
+                <h6>Press any key to get started!</h6>
+            </p>
+        </div>
+
+
+        <div class="card">
+            <div class="card-header">Word to Guess</div>
+            <div class="card-body">
+                <h2 id="blankWord">_ _ _ _ _ _ _ _</h2>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="card">
+            <div class="card-body">
+                Wrong Guesses: <span id="wrongGuesses"></span>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="card">
+            <div class="card-body">
+                Guesses Left: <span id="numGuesses"></span>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="card">
+            <div class="card-body">
+                Wins: <span id="winCounter"></span>
+            </div>
+        </div>
+
+        <br>
+
+        <div class="card">
+            <div class="card-body">
+                Losses: <span id="lossCounter"></span>
+            </div>
+        </div>
+    </div>
+
+    <script src="game.js"></script>
+
+</body>
+
+</html>
